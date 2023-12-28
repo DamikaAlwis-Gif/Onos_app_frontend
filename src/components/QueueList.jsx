@@ -10,7 +10,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { useNavigate } from 'react-router-dom';
-
+import IconButton from "@mui/material/IconButton";
 
 const QueueList = () => {
   const [switchName, setSwitchName] = useState("switch1");
@@ -36,8 +36,12 @@ const QueueList = () => {
       <div className="container mt-5">
         <div className="row">
           <div style={{ marginBottom: "10px" }}>
-            
-            <Button variant="contained" color="success" size="small" onClick={handleAdd}>
+            <Button
+              variant="contained"
+              color="success"
+              size="small"
+              onClick={handleAdd}
+            >
               Add new queue
             </Button>
           </div>
@@ -118,14 +122,17 @@ const QueueList = () => {
                     <TableCell>1</TableCell>
                     <TableCell>default</TableCell>
                     <TableCell>
-                      <Button
+                      {/* <Button
                         variant="contained"
                         color="error"
                         size="small"
                         startIcon={<DeleteIcon />}
                       >
                         Delete
-                      </Button>
+                      </Button> */}
+                      <IconButton color="error">
+                        <DeleteIcon />
+                      </IconButton>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -136,19 +143,13 @@ const QueueList = () => {
                     <TableCell>1</TableCell>
                     <TableCell>default</TableCell>
                     <TableCell>
-                      <Button
-                        variant="contained"
-                        color="error"
-                        size="small"
-                        startIcon={<DeleteIcon />}
-                      >
-                        Delete
-                      </Button>
+                      <IconButton color="error">
+                        <DeleteIcon />
+                      </IconButton>
                     </TableCell>
-                    </TableRow>
+                  </TableRow>
                 </TableBody>
               </Table>
-
             </TableContainer>
           </div>
         </div>
