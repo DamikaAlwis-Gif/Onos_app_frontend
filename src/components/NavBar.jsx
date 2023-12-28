@@ -14,7 +14,7 @@ const NavBar = () => {
             <img
               src={onosLogo}
               alt="onos logo"
-              style={{ width: "50px", borderRadius: "50%" }}
+              style={{ width: "40px", borderRadius: "50%", margin: "5px" }}
             />
           </div>
           <div style={{ flex: 1, marginLeft: "10px" }}>
@@ -30,7 +30,7 @@ const NavBar = () => {
                   fontSize: "20px",
                   textAlign: "center",
                   color: "white",
-                  fontWeight: "bold",
+                  
                 }}
               >
                 ONOS Queue Management Application
