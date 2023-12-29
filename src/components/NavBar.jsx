@@ -30,13 +30,17 @@ const NavBar = () => {
                   fontSize: "20px",
                   textAlign: "center",
                   color: "white",
+                  fontWeight: 500,
+                 
                   
                 }}
               >
                 ONOS Queue Management Application
               </p>
             </div>
+            
           </div>
+          
         </div>
       </div>
     </div>
