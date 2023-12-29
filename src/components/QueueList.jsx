@@ -11,7 +11,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { useNavigate } from 'react-router-dom';
 import IconButton from "@mui/material/IconButton";
-
+import "./QueueList.css";
 const QueueList = () => {
   const [switchName, setSwitchName] = useState("switch1");
   const navigate = useNavigate();
@@ -20,85 +20,20 @@ const QueueList = () => {
   }
   return (
     <div>
-      {/* <div className=".switch-name">
-        <p
-          style={{
-            fontSize: "20px",
-            textAlign: "center",
-            color: "black",
-            fontWeight: "bold",
-          }}
-        >
-          OVS switch : {switchName}
-        </p>
-      </div> */}
-
       <div className="container mt-5">
         <div className="row">
           <div style={{ marginBottom: "10px" }}>
-            <Button
+            {/* <Button
               variant="contained"
               color="success"
               size="small"
               onClick={handleAdd}
             >
               Add new queue
-            </Button>
+            </Button> */}
+            <button className = "submit-button" onClick={handleAdd}>Add New Queue</button>
           </div>
-          {/* <div className="col">
-            <table className="table table-light  table-hover table-responsive">
-              <thead>
-                <tr>
-                  <th>Queue ID</th>
-                  <th>Queue Type</th>
-                  <th>Max Rate</th>
-                  <th>Min Rate</th>
-                  <th>Priority</th>
-                  <th>Description</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>linux-htb</td>
-                  <td>10000000</td>
-                  <td>10000000</td>
-                  <td>1</td>
-                  <td>default</td>
-                  <td>
-                    
-                    <Button
-                      variant="contained"
-                      color="error"
-                      size="small"
-                      startIcon={<DeleteIcon />}
-                    >
-                      Delete
-                    </Button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>linux-htb</td>
-                  <td>10000000</td>
-                  <td>10000000</td>
-                  <td>1</td>
-                  <td>default</td>
-                  <td>
-                    <Button
-                      variant="contained"
-                      color="error"
-                      size="small"
-                      startIcon={<DeleteIcon />}
-                    >
-                      Delete
-                    </Button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div> */}
+
           <div>
             <TableContainer component={Paper}>
               <Table>

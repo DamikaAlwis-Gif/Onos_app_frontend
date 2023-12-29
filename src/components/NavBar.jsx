@@ -1,5 +1,6 @@
-import React from 'react'
-import onosLogo from '../img/onos.png'
+import React from "react";
+import onosLogo from "../img/onos.png";
+
 const NavBar = () => {
   return (
     <div>
@@ -30,17 +31,32 @@ const NavBar = () => {
                   fontSize: "20px",
                   textAlign: "center",
                   color: "white",
-                  
+                  fontWeight: 500,
                 }}
               >
                 ONOS Queue Management Application
               </p>
+
+              <select
+                style={{
+                  marginLeft: "50px",
+                  padding: "5px",
+                  borderRadius: "5px",
+                  width: "150px",
+                  backgroundColor: "",
+                }}
+              >
+                <option value="" selected disabled >Select a device</option>
+                <option value="option1">OVS Switch 1</option>
+                <option value="option2">OVS Switch 2</option>
+                <option value="option3">OVS Switch 3</option>
+              </select>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default NavBar
+export default NavBar;
