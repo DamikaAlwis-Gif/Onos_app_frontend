@@ -1,13 +1,12 @@
 import React from 'react'
 import "./Add.css"
-import Button from "@mui/material/Button";
 const Add = () => {
   return (
     <div className="row">
       <div>
         <form>
-          <label for="name">Queue Type</label>
-          <input type="text" id="name" name="name" required></input>
+          {/* <label for="name">Queue Type</label>
+          <input type="text" id="name" name="name" required></input> */}
 
           <label >Max Rate</label>
           <input type="text"  required></input>
@@ -18,7 +17,7 @@ const Add = () => {
           <label>Priority</label>
           <input type="text"  required></input>
 
-          <label >Descriptions</label>
+          <label >Description</label>
           <input type="text"  required></input>
          
           <div
