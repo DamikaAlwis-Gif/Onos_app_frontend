@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -40,7 +39,7 @@ const QueueList = () => {
                 <TableHead>
                   <TableRow>
                     <TableCell>Queue ID</TableCell>
-                    <TableCell>Queue Type</TableCell>
+                    {/* <TableCell>Queue Type</TableCell> */}
                     <TableCell>Max Rate</TableCell>
                     <TableCell>Min Rate</TableCell>
                     <TableCell>Priority</TableCell>
@@ -51,11 +50,11 @@ const QueueList = () => {
                 <TableBody>
                   <TableRow>
                     <TableCell>1</TableCell>
-                    <TableCell>linux-htb</TableCell>
-                    <TableCell>10000000</TableCell>
-                    <TableCell>10000000</TableCell>
+                    {/* <TableCell>linux-htb</TableCell> */}
+                    <TableCell>10 Mbps</TableCell>
+                    <TableCell>5 Mbps</TableCell>
                     <TableCell>1</TableCell>
-                    <TableCell>default</TableCell>
+                    <TableCell>Voice Traffic</TableCell>
                     <TableCell>
                       {/* <Button
                         variant="contained"
@@ -72,11 +71,11 @@ const QueueList = () => {
                   </TableRow>
                   <TableRow>
                     <TableCell>2</TableCell>
-                    <TableCell>linux-htb</TableCell>
-                    <TableCell>10000000</TableCell>
-                    <TableCell>10000000</TableCell>
-                    <TableCell>1</TableCell>
-                    <TableCell>default</TableCell>
+                    {/* <TableCell>linux-htb</TableCell> */}
+                    <TableCell>20 Mbps</TableCell>
+                    <TableCell>10 Mbps</TableCell>
+                    <TableCell>3</TableCell>
+                    <TableCell>Video Traffic</TableCell>
                     <TableCell>
                       <IconButton color="error">
                         <DeleteIcon />
